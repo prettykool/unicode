@@ -2,7 +2,7 @@
 Unicode is a command-line utility for querying the [Unicode Character Database](https://unicode.org/ucd/).
 
 ## Installation
-It is not reccommended to install from GitHub directly - Use the following, instead:
+It is not recommended to install from GitHub directly - Use the following, instead:
 
 ```
 go install robpike.io/cmd/unicode@latest
@@ -21,7 +21,7 @@ usage: unicode { [-t] hex hex ... | hexmin-hexmax ... | [-n] char ... }
 % # Print the code point assigned to the character '%'
 % unicode -n %
 0025
-% # Use the -t flag to print plain characters, without a newline separating them.
+% # Use the -t flag to print plain characters, without a newline separating them
 % # for example, compare:
 % unicode 0022 0037 00aa
 "
@@ -30,7 +30,7 @@ usage: unicode { [-t] hex hex ... | hexmin-hexmax ... | [-n] char ... }
 % # to:
 % unicode -t 0022 0037 00aa
 "7ª% 
-% Print all characters, with their code point, within the given range. 
+% Print all characters, with their code point, within the given range
 % unicode 20-7e
 0020  	0021 !	0022 "	0023 #	0024 $	0025 %	0026 &	0027 '
 0028 (	0029 )	002a *	002b +	002c ,	002d -	002e .	002f /
